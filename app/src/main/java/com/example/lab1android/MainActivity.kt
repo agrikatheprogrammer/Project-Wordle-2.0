@@ -276,7 +276,6 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.textView2).visibility=View.INVISIBLE
                 findViewById<TextView>(R.id.textView3).visibility=View.INVISIBLE
                 findViewById<ImageView>(R.id.submit1).visibility=View.VISIBLE
-                findViewById<ImageView>(R.id.reset1).visibility=View.INVISIBLE
-            }
+                findViewById<ImageView>(R.id.reset1).visibility=View.INVISIBLE }
             }
 }
