@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/agrikatheprogrammer/Project-Wordle-2.0/blob/main/Record-2023-02-25-13-40-21.gif' />
+<img src='https://github.com/agrikatheprogrammer/Project-Wordle-2.0/blob/main/Record-2023-02-25-13-40-21.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
 GIF created with Ezgif.com
 
