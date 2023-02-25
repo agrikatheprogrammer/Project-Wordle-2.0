@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://im2.ezgif.com/tmp/ezgif-2-ed11675a14.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+<img src='https://im2.ezgif.com/tmp/ezgif-2-ed11675a14.gif' />
 
 GIF created with Ezgif.com
 
