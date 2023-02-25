@@ -5,7 +5,7 @@ Submitted by: Agrika Gupta
 
 Guess the Word is an android app that recreates a simple version of the popular word game [Wordle](https://www.nytimes.com/games/wordle/index.html). 
 
-Time spent: 8.5 hours spent in total
+Time spent: 10 hours spent in total
 
 ## Required Features
 
@@ -33,10 +33,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://im2.ezgif.com/tmp/ezgif-2-5df2dce8a7.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with 
+GIF created with Ezgif.com
 
 ## License
 
