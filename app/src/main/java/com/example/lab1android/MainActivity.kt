@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val submit=findViewById<ImageView>(R.id.submit1)
-
         var konfetti = findViewById<KonfettiView>(R.id.konfettiView)
         val theList=FourLetterWordList.FourLetterWordList
         var wordToGuess=theList.getRandomFourLetterWord()
@@ -29,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         var ch4=wordToGuess[3]
         val Reset=findViewById<ImageView>(R.id.reset1)
         val corr=findViewById<TextView>(R.id.jojo)
+
         submit.setOnClickListener {
             var correctOrNah=false
             var text1id1 = findViewById<EditText>(R.id.text1id1).text.toString().uppercase()
@@ -98,6 +98,7 @@ class MainActivity : AppCompatActivity() {
                     corr.text=wordToGuess
                     corr.visibility=View.VISIBLE
                     }}
+
                 else if (text2id1!=""&&text2id2!=""&&text2id3!=""&&text2id4!=""&&counter==1) {
                 if (ch1==text2id1[0]) {
                     findViewById<EditText>(R.id.text2id1).setBackgroundColor(Color.parseColor("#00FF00"))
@@ -157,6 +158,7 @@ class MainActivity : AppCompatActivity() {
                     corr.text=wordToGuess
                     corr.visibility=View.VISIBLE
                     }
+
                 } else if (text3id1!=""&&text3id2!=""&&text3id3!=""&&text3id4!=""&&counter==2) {
                     if (ch1==text3id1[0]) {
                         findViewById<EditText>(R.id.text3id1).setBackgroundColor(
@@ -223,9 +225,11 @@ class MainActivity : AppCompatActivity() {
                         submit.visibility=View.INVISIBLE
                         corr.text=wordToGuess
                         corr.visibility=View.VISIBLE }
+
                 } else {
                     Toast.makeText(applicationContext, "Input is not valid!", Toast.LENGTH_SHORT).show() }
-                truth=0 }
+
+            truth=0 }
 
             Reset.setOnClickListener {
                 truth=0
