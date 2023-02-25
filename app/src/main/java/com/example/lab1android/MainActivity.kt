@@ -217,27 +217,15 @@ class MainActivity : AppCompatActivity() {
                         corr.text=wordToGuess
                         corr.visibility=View.VISIBLE
                     } else {
-                        konfetti.start(
-                            Party(
-                                speed = 0f,
-                                maxSpeed = 30f,
-                                damping = 0.9f,
-                                spread = 360,
-                                colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
-                                emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
-                                position = Position.Relative(0.5, 0.3)
-                            )
-                        )
+                        konfetti.start(Party(speed = 0f, maxSpeed = 30f, damping = 0.9f, spread = 360, colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def), emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100), position = Position.Relative(0.5, 0.3)))
                         Toast.makeText(applicationContext, "You won! Congratulations!", Toast.LENGTH_SHORT).show()
                         Reset.visibility=View.VISIBLE
                         submit.visibility=View.INVISIBLE
                         corr.text=wordToGuess
-                        corr.visibility=View.VISIBLE
-                    }
+                        corr.visibility=View.VISIBLE }
                 } else {
                     Toast.makeText(applicationContext, "Input is not valid!", Toast.LENGTH_SHORT).show() }
-                truth=0
-            }
+                truth=0 }
             Reset.setOnClickListener {
                 truth=0
                 counter=0
