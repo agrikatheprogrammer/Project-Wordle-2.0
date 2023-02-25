@@ -5,7 +5,7 @@ Submitted by: Agrika Gupta
 
 Guess the Word is an android app that recreates a simple version of the popular word game [Wordle](https://www.nytimes.com/games/wordle/index.html). 
 
-Time spent: 6.5 hours spent in total
+Time spent: 8.5 hours spent in total
 
 ## Required Features
 
