@@ -226,6 +226,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(applicationContext, "Input is not valid!", Toast.LENGTH_SHORT).show() }
                 truth=0 }
+
             Reset.setOnClickListener {
                 truth=0
                 counter=0
