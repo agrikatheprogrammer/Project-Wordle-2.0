@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
         var ch2=wordToGuess[1]
         var ch3=wordToGuess[2]
         var ch4=wordToGuess[3]
-        var correctOrNah=false
         val Reset=findViewById<ImageView>(R.id.reset1)
         val corr=findViewById<TextView>(R.id.jojo)
         submit.setOnClickListener {
+            var correctOrNah=false
             var text1id1 = findViewById<EditText>(R.id.text1id1).text.toString().uppercase()
             var text1id2=  findViewById<EditText>(R.id.text1id2).text.toString().uppercase()
             var text1id3=  findViewById<EditText>(R.id.text1id3).text.toString().uppercase()
@@ -48,59 +48,39 @@ class MainActivity : AppCompatActivity() {
 
             if (text1id1!=""&&text1id2!=""&&text1id3!=""&&text1id4!=""&&counter==0) {
                     if (ch1==text1id1[0]) {
-                        findViewById<EditText>(R.id.text1id1).setBackgroundColor(
-                            Color.parseColor("#00FF00")
-                        )
+                        findViewById<EditText>(R.id.text1id1).setBackgroundColor(Color.parseColor("#00FF00"))
                         truth += 1
                     } else if (text1id1 in wordToGuess) {
-                        findViewById<EditText>(R.id.text1id1).setBackgroundColor(
-                            Color.parseColor("#FFFF00")
-                        )
+                        findViewById<EditText>(R.id.text1id1).setBackgroundColor(Color.parseColor("#FFFF00"))
                     } else {
-                        findViewById<EditText>(R.id.text1id1).setBackgroundColor(
-                            Color.parseColor("#808080")
-                        )
-                    }
+                        findViewById<EditText>(R.id.text1id1).setBackgroundColor(Color.parseColor("#808080")) }
                     if (ch2==text1id2[0]) {
-                        findViewById<EditText>(R.id.text1id2).setBackgroundColor(
-                            Color.parseColor("#00FF00")
-                        )
+                        findViewById<EditText>(R.id.text1id2).setBackgroundColor(Color.parseColor("#00FF00"))
                         truth += 1
                     } else if (text1id2 in wordToGuess) {
                         findViewById<EditText>(R.id.text1id2).setBackgroundColor(Color.parseColor("#FFFF00"))
                     } else {
-                        findViewById<EditText>(R.id.text1id2).setBackgroundColor(
-                            Color.parseColor("#808080")
-                        )
+                        findViewById<EditText>(R.id.text1id2).setBackgroundColor(Color.parseColor("#808080"))
                     }
                     if (ch3==text1id3[0]) {
-                        findViewById<EditText>(R.id.text1id3).setBackgroundColor(
-                            Color.parseColor("#00FF00")
-                        )
+                        findViewById<EditText>(R.id.text1id3).setBackgroundColor(Color.parseColor("#00FF00"))
                         truth += 1
                     } else if (text1id3 in wordToGuess) {
                         findViewById<EditText>(R.id.text1id3).setBackgroundColor(Color.parseColor("#FFFF00"))
                     } else {
                         findViewById<EditText>(R.id.text1id3).setBackgroundColor(
-                            Color.parseColor("#808080")
-                        )
+                            Color.parseColor("#808080"))
                     }
                     if (ch4==text1id4[0]) {
-                        findViewById<EditText>(R.id.text1id4).setBackgroundColor(
-                            Color.parseColor("#00FF00")
-                        )
+                        findViewById<EditText>(R.id.text1id4).setBackgroundColor(Color.parseColor("#00FF00"))
                         truth += 1
                     } else if (text1id4 in wordToGuess) {
                         findViewById<EditText>(R.id.text1id4).setBackgroundColor(Color.parseColor("#FFFF00"))
                     } else {
-                        findViewById<EditText>(R.id.text1id4).setBackgroundColor(
-                            Color.parseColor("#808080")
-                        )
-                    }
+                        findViewById<EditText>(R.id.text1id4).setBackgroundColor(Color.parseColor("#808080")) }
                     if (truth == 4) {
                         correctOrNah = true
-                        truth=0
-                    }
+                         }
                     counter+=1
                 if (!correctOrNah) {
                         findViewById<EditText>(R.id.text2id1).visibility= View.VISIBLE
@@ -110,18 +90,8 @@ class MainActivity : AppCompatActivity() {
                     findViewById<TextView>(R.id.textView2).visibility=View.VISIBLE
                     } else {
                     konfetti.start(
-                        Party(
-                            speed = 0f,
-                            maxSpeed = 30f,
-                            damping = 0.9f,
-                            spread = 360,
-                            colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
-                            emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
-                            position = Position.Relative(0.5, 0.3)
-                        )
-                    )
-                    Toast.makeText(applicationContext, "You won! Congratulations!", Toast.LENGTH_SHORT)
-                        .show()
+                        Party(speed = 0f, maxSpeed = 30f, damping = 0.9f, spread = 360, colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def), emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100), position = Position.Relative(0.5, 0.3)))
+                    Toast.makeText(applicationContext, "You won! Congratulations!", Toast.LENGTH_SHORT).show()
                     counter=0
                     Reset.visibility=View.VISIBLE
                     submit.visibility=View.INVISIBLE
@@ -130,19 +100,12 @@ class MainActivity : AppCompatActivity() {
                     }}
                 else if (text2id1!=""&&text2id2!=""&&text2id3!=""&&text2id4!=""&&counter==1) {
                 if (ch1==text2id1[0]) {
-                    findViewById<EditText>(R.id.text2id1).setBackgroundColor(
-                        Color.parseColor("#00FF00")
-                    )
+                    findViewById<EditText>(R.id.text2id1).setBackgroundColor(Color.parseColor("#00FF00"))
                     truth += 1
                 } else if (text2id1 in wordToGuess) {
-                    findViewById<EditText>(R.id.text2id1).setBackgroundColor(
-                        Color.parseColor("#FFFF00")
-                    )
+                    findViewById<EditText>(R.id.text2id1).setBackgroundColor(Color.parseColor("#FFFF00"))
                 } else {
-                    findViewById<EditText>(R.id.text2id1).setBackgroundColor(
-                        Color.parseColor("#808080")
-                    )
-                }
+                    findViewById<EditText>(R.id.text2id1).setBackgroundColor(Color.parseColor("#808080")) }
                 if (ch2==text2id2[0]) {
                     findViewById<EditText>(R.id.text2id2).setBackgroundColor(
                         Color.parseColor("#00FF00")
@@ -175,14 +138,10 @@ class MainActivity : AppCompatActivity() {
                 } else if (text2id4 in wordToGuess) {
                     findViewById<EditText>(R.id.text2id4).setBackgroundColor(Color.parseColor("#FFFF00"))
                 } else {
-                    findViewById<EditText>(R.id.text2id4).setBackgroundColor(
-                        Color.parseColor("#808080")
-                    )
-                }
+                    findViewById<EditText>(R.id.text2id4).setBackgroundColor(Color.parseColor("#808080")) }
                 if (truth == 4) {
                     correctOrNah = true
-                    truth=0
-                }
+                     }
                 counter++
                 if (!correctOrNah) {
                     findViewById<EditText>(R.id.text3id1).visibility = View.VISIBLE
@@ -191,19 +150,8 @@ class MainActivity : AppCompatActivity() {
                     findViewById<EditText>(R.id.text3id4).visibility = View.VISIBLE
                     findViewById<TextView>(R.id.textView3).visibility = View.VISIBLE } else {
                         counter=0
-                    konfetti.start(
-                        Party(
-                            speed = 0f,
-                            maxSpeed = 30f,
-                            damping = 0.9f,
-                            spread = 360,
-                            colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
-                            emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
-                            position = Position.Relative(0.5, 0.3)
-                        )
-                    )
-                    Toast.makeText(applicationContext, "You won! Congratulations!", Toast.LENGTH_SHORT)
-                        .show()
+                    konfetti.start(Party(speed = 0f, maxSpeed = 30f, damping = 0.9f, spread = 360, colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def), emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100), position = Position.Relative(0.5, 0.3)))
+                    Toast.makeText(applicationContext, "You won! Congratulations!", Toast.LENGTH_SHORT).show()
                     Reset.visibility=View.VISIBLE
                     submit.visibility=View.INVISIBLE
                     corr.text=wordToGuess
@@ -280,20 +228,19 @@ class MainActivity : AppCompatActivity() {
                                 position = Position.Relative(0.5, 0.3)
                             )
                         )
-                        Toast.makeText(applicationContext, "You won! Congratulations!", Toast.LENGTH_SHORT)
-                            .show()
+                        Toast.makeText(applicationContext, "You won! Congratulations!", Toast.LENGTH_SHORT).show()
                         Reset.visibility=View.VISIBLE
                         submit.visibility=View.INVISIBLE
                         corr.text=wordToGuess
                         corr.visibility=View.VISIBLE
                     }
                 } else {
-                    Toast.makeText(applicationContext, "Input is not complete!", Toast.LENGTH_SHORT)
-                        .show()
-                }
-            truth=0
+                    Toast.makeText(applicationContext, "Input is not valid!", Toast.LENGTH_SHORT).show() }
+                truth=0
             }
             Reset.setOnClickListener {
+                truth=0
+                counter=0
                 wordToGuess=theList.getRandomFourLetterWord()
                 ch1=wordToGuess[0]
                 ch2=wordToGuess[1]
